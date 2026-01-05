@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilla és Merse esküvője</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+    <div class="hero">
+        <img src="lilselogo.png" alt="Lilla és Merse">
+    </div>
+    <div class="welcome">
+        <h1>Kedves szeretteink!</h1>
+
+        <p>Szeretettel köszöntünk az esküvőnk weboldalán! <br> Köszönjük, hogy velünk ünneplitek a nagy napunkat.</p>
+        <p>Itt minden fontos információt megtaláltok a helyszínről, menetrendről és visszajelzésekről. Ha kérdésetek van, bátran vegyétek fel velünk a kapcsolatot!</p>
+        <p>Egy biztos: a kényelmes cipőt ne hagyjátok otthon, eltáncoljuk az összes papucsot. Igen, az <b>összeset</b>!</p> 
+
+        <div class="countdown">
+            <h4>Esküvőnk pontos dátuma <b>2026.09.05.</b></h4>
+
+            <p id="demo"></p>
+
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Sep 5, 2026 15:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+                
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+                
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + " NAP " + hours + " ÓRA "
+            + minutes + " PERC " + seconds + " MÁSODPERC";
+                
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+            </script>
+        </div>
+
+        <img class="flowers" src="1.png" alt="">
+    </div>
+    <div class="castle">
+        <img class="menuimg" src="Helyszin.png" alt="">
+        <img class="vasszecseny" src="vasszecseny.jpeg" alt="Ó-Ebergényi kastély">
+        <p>Lagzink helyszíne a több mint 500 éves Ó-Ebergényi kastély, melynek falai számtalan történetet (és talán néhány kísértetet is) őriznek.
+           <br>Büszkén mondhatjuk, hogy egy valódi történelmi műemlék kertjében mondhatjuk ki az Igen-t.</p>
+        <p>Bár Budapestről és környékéről hosszabb az út, bízunk benne, hogy a helyszín titeket is legalább annyira elvarázsol majd, mint minket.</p>
+        <p>Pontos cím: <b>9763 Vasszécseny, Ebergényi fasor 10.</b></p>
+
+        <h3>A kastély saját parkolóval rendelkezik, kérjük, érkezzetek időben, hogy biztosan legyen helyetek.</h3>
+    </div>
+
+    <div class="event">
+        <img class="menuimg" src="Menetrend2.png" alt="">
+        <img class="eventcard" src="Menetrend.png" alt="">
+    </div>
+
+    <div class="accommodation">
+        <img class="menuimg" src="Szallas.png" alt="">
+        <p>A szállásban is igyekszünk segíteni, hogy az észveszejtő buli után mindenki kényelmesen megpihenhessen.</p>
+        <p>A kastélyban, illetve a közeli Stőger panzióban tudunk szállást ajánlani. A férőhelyek száma korlátozott, ezért köszönjük a rugalmasságotokat. Ha belefér, egyeztessetek egymással is, mivel több 3–4 fős szoba érhető el, míg 2 fős szobából kevesebb van.
+        <br>Aki a Stőger panzióban száll meg, annak a kastély csapata ingyenes transzfert biztosít a lagzi után. </p>
+        <p>Természetesen más szállást is választhattok, ebben az esetben a transzfer megszervezése egyénileg történik.</p>
+
+        <h4>A szállások</h4>
+        <div class="list-wrapper">
+            <ul>
+                <li><b>Ó-Ebergényi kastély</b></li>
+                <li>Telefonszám</li>
+                <li>Elérhető szobák</li>
+                <li>A szoba költsége x 000 Ft/szoba</li>
+            </ul>
+
+            <ul>
+                <li><b>Stőger Panzió és Étterem</b></li>
+                <li>Telefonszám</li>
+                <li>Elérhető szobák</li>
+                <li>A szoba költsége x 000 Ft/szoba</li>
+            </ul>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1f4gVfomFmgauEalwcDZYy358G08-XLQ&ehbc=2E312F" width="640" height="480"></iframe>
+
+        </div>
+        <img class="flowers" src="2.png" alt="">
+    </div>
+
+    <div class="dinner">
+        <img class="menuimg" src="Etkezes.png" alt="">
+        <p>A menüsor egyeztetés alatt van a kastéllyal. A pocakunk (hisz ismertek minket) kiemelt figyelmet kap, így senki nem marad éhes. <br>Ha valamilyen speciális diétát követtek (glutén-, laktóz-, tejérzékenység, vegetáriánus, stb), mindenképpen jelezzétek nekünk!</p>
+        <p>Az esküvőt követő reggelen józanodó reggeli kérhető a kastélyban. Ha szeretnétek élni vele, ezt is jelezzétek felénk.
+            <br>A reggeli költsége 2500 Ft/fő.</p>
+    </div>
+
+    <div class="dresscode">
+        <img class="menuimg" src="Dresscode.png" alt="">
+        <p>Egyikünk sem szívbajos, mindenki azt vesz fel, amit szeretne. A lényeg, hogy érezd magad nagyon jól a szettedben és viselj bátran vidám színeket!</p>
+    </div>
+
+    <div class="gifts">
+        <img class="menuimg" src="Ajandekok.png" alt="">
+        <p>Na ez az a kérdés, amit mind a ketten úgy kerülgetünk, mint macska a forró kását. <br>
+            Otthonunk jelenleg nem szenved semmiben hiányt (kivéve talán még 2 macska, egy shiba inu és egy régi Midwayes MK Arcade gép). <br>Szóval, ha nem tudod, mit adj, akkor ne aggódj! Annak örülünk legjobban, ha együtt ünnepelünk!</p> 
+        <p>Amennyiben mégis szeretnél valamivel hozzájárulni a nagy naphoz, megtáncoltathatod a menyasszonyt!</p>
+    </div>
+    <div class="rsvp">
+        <img class="menuimg" src="RSVP.png" alt="">
+        <h2>Kérjük, részvételi szándékod legkésőbb 2026.05.31-ig jelezd!</h2>
+        <p>Kérdés esetén kérjük, keresd Lillát vagy Mersét telefonon, messengeren vagy bármilyen más elérhetőségen.</p>
+
+        <p>Részvételi szándékodat az alábbi QR kódra kattintva vagy befotózva tudod jelezni:</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSelSBFOHHzHmQn428f7LhBij5Xxz7DgL9SWFmnBqJ8U0GNNOg/viewform?usp=dialog" target="_blank" ><img class="qr" src="QRcode.png" alt=""></a>
+        <img class="flowers" src="4.png" alt="">
+    </div>
+    <div class="photos">
+        <img class="menuimg" src="Fotok.png" alt="">
+        <h2>Az esküvő után kérjük, a buliról készült képeket töltsd fel az alábbi linken/QR kódon:</h2>
+        <a href="https://drive.google.com/drive/folders/1cc7hJO5L16teJi_nCSrVUvWBimgR6viF?usp=sharing" target="_blank"><img class="memories" src="memories.png" alt=""></a>
+
+    </div>
+    <div class="footer">
+        Készítette: Biró Lilla Anna © 2026
+    </div>
+</body>
+</html>

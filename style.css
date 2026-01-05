@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "Lora", serif;
+    color: #7c5d26;
+
+}
+
+b {
+    color: #503c19;
+}
+
+.list-wrapper {
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.list-wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background-color: #f4f1eb;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.welcome {
+    background-color: #f4f1eb;
+    width: 100%;
+    padding-bottom: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.welcome img {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+}
+
+.countdown p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.castle {
+margin-top: 70px;
+margin-bottom: 35px;
+}
+
+ .menuimg {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.vasszecseny {
+    margin-left: 40px;
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 6px darkslategrey;
+}
+
+.castle p {
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 40px;
+}
+.event{
+    background-color: #f4f1eb;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+.eventcard {
+    width: 50%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.accommodation {
+    padding-bottom: 35px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.accommodation p {
+    margin-left: 40px;
+}
+
+.flowers {
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.map {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dinner {
+    background-color: #f4f1eb;
+    width: 100%;
+}
+
+.dinner p {
+    margin-left: 40px;
+}
+
+.dresscode {
+    background-color: #f4f1eb;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+.dresscode p {
+    margin-left: 40px;
+}
+
+.gifts {
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 50px;
+}
+
+.gifts p {
+    margin-left: 40px;
+}
+
+.rsvp {
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 50px;
+}
+
+.rsvp p {
+    margin-left: 40px;
+}
+
+.qr {
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.photos {
+    background-color: #f4f1eb;
+    width: 100%;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.photos p {
+    margin-left: 40px;
+}
+
+.memories {
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footer {
+    background-color: #eb5847;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX v2
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* ---- GLOBAL SAFETY ---- */
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* ---- FULL WIDTH BACKGROUNDS (NO PADDING) ---- */
+
+    .welcome,
+    .event,
+    .dinner,
+    .dresscode,
+    .squad,
+    .photos {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        padding: 0;
+    }
+
+    /* ---- NORMAL SECTIONS ---- */
+
+    .castle,
+    .accommodation,
+    .gifts,
+    .rsvp {
+        padding: 0 12px;
+    }
+
+      .castle p,
+    .accommodation p,
+    .dinner p,
+    .gifts p,
+    .rsvp p{
+        padding: 0;
+    }
+    /* ---- ALCÍM KÉPEK ---- */
+
+    .menuimg {
+        height: auto;
+        max-width: 90%;
+        margin: 30px auto;
+    }
+
+    /* ---- VIRÁG DÍSZEK ---- */
+
+    .flowers {
+        height: auto;
+        max-width: 100%;
+        margin: 40px auto;
+    }
+
+    /* ---- CASTLE IMAGE ---- */
+
+    .vasszecseny {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    /* ---- EVENT CARD ---- */
+
+    .eventcard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* ---- LISTÁK ---- */
+
+    .list-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    /* ---- MAP ---- */
+
+    .map iframe {
+        width: 100%;
+        height: 260px;
+    }
+
+    /* ---- MEMORIES / QR ---- */
+
+    .memories {
+        height: auto;
+        max-width: 240px;
+    }
+
+    .qr {
+        height: auto;
+        max-width: 160px;
+    }
+
+    /* ---- TEXT ---- */
+
+    p {
+        font-size: 1.1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h1, h2, h3, h4 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    /* ---- COUNTDOWN FIX ---- */
+
+    .countdown p {
+        font-size: 30px;
+        line-height: 1.2;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+        /* ---- FIRST FLOWER FIX (WELCOME SECTION) ---- */
+
+    .welcome .flowers {
+        max-height: 160px;
+        margin: 30px auto 10px auto;
+    }
+
+    /* ---- PHOTOS SECTION BOTTOM SPACE ---- */
+
+    .photos {
+        padding-bottom: 70px;
+    }
+}
+
+/* =========================
+   TABLET RESPONSIVE FIX
+   ========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* ---- FULL WIDTH BACKGROUNDS ---- */
+
+    .welcome,
+    .event,
+    .dinner,
+    .dresscode,
+    .squad,
+    .photos {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* ---- CONTENT SECTIONS ---- */
+
+    .castle,
+    .accommodation,
+    .gifts,
+    .rsvp {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* ---- ALCÍM KÉPEK ---- */
+
+    .menuimg {
+        max-width: 80%;
+        height: auto;
+        margin: 40px auto;
+    }
+
+    /* ---- FLOWERS ---- */
+
+    .flowers {
+        max-width: 70%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    /* ---- IMAGES ---- */
+
+    .vasszecseny {
+        width: 70%;
+        float: none;
+        margin: 30px auto;
+    }
+
+    .eventcard {
+        width: 80%;
+    }
+
+    /* ---- MAP ---- */
+
+    .map iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* ---- MEMORIES / QR ---- */
+
+    .memories {
+        max-width: 420px;
+        height: auto;
+    }
+
+    .qr {
+        max-width: 220px;
+        height: auto;
+    }
+
+      html, body {
+        overflow-x: hidden;  /* Nincs vízszintes scroll */
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box; /* Padding+width ne csússzon ki */
+    }
+
+    /* Extra biztonságos full-width bézs szekciók */
+    .welcome,
+    .event,
+    .dinner,
+    .dresscode,
+    .photos {
+        margin-left: 0;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
